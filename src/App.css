@@ -1,0 +1,155 @@
+:root {
+  /* * COLORES * */
+
+  /* ? AZUL ? */
+
+  --azul:#0000FF;
+  --navy: #000088;
+  --dark-blue: #000044;
+  --royal: #4169E1;
+  --baby-blue: #87CEFA;
+  --light-blue: #ADD8E6;
+
+  /* BLANCO */
+
+  --blanco: #D8D8D8;
+  --ivory: #FFFFF0;
+  --cream: #FAFAD2;
+  --snow: #FFFAFA;
+  --smoke: #F5F5F5;
+  --gainsboro: #DCDCDC;
+
+  /* TODO GRIS Y NEGRO TODO */
+
+  --negro: #131313;
+  --gris: #333333;
+  --gris-medio: #666666;
+  --gris-claro: #999999;
+  --plateado: #C0C0C0;
+  --ceniza: #B2B2B2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+body {
+background-color: var(--light-blue);
+font-family: 'Montserrat';
+font-style: normal;
+}
+
+.navegacion{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1%;
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.navegacion h3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 49px;
+  margin-bottom: 1rem;
+}
+
+.navegacion ul {
+  display: inline-flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.navegacion li a {
+  text-decoration: none;
+  color: var(--dark-blue);
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.myInfo {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.myInfo img {
+  width: 12rem;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.myInfo p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10%;
+}
+
+.aboutMe h2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 49px;
+  margin-bottom: 1rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-aboutMe {
+  display: grid;
+  grid-template-columns: repeat(1, 3fr);
+  border: 2px red solid;
+}
+
+.btn-aboutMe {
+  width: 20%;
+  margin-left: 2%;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 49px;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  border: none;
+  background-color: var(--royal);
+  color: var(--ivory);
+}
+
+.btn-aboutMe:hover {
+  width: 40%;
+  transition: 1s ease-in-out;
+  color: var(--dark-blue);
+  background-color: var(--baby-blue);
+}
+
+.btnHabilidades {
+  margin-top: 2%;
+}
