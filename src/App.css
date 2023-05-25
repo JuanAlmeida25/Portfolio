@@ -121,22 +121,26 @@ font-style: normal;
   justify-content: center;
 }
 
-.info-aboutMe {
+.title-aboutMe {
   display: grid;
   grid-template-columns: repeat(1, 3fr);
-  border: 2px red solid;
+  float: left;
+  width: 50%;
 }
 
 .btn-aboutMe {
-  width: 20%;
-  margin-left: 2%;
+  width: 70%;
+  height: 8vh;
 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
   line-height: 49px;
-  margin-bottom: 1rem;
+
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-bottom: 3%;
   border-radius: 14px;
   border: none;
   background-color: var(--royal);
@@ -144,12 +148,63 @@ font-style: normal;
 }
 
 .btn-aboutMe:hover {
-  width: 40%;
+  width: 96%;
   transition: 1s ease-in-out;
   color: var(--dark-blue);
   background-color: var(--baby-blue);
+  cursor: pointer;
 }
 
-.btnHabilidades {
-  margin-top: 2%;
+.info-aboutMe {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  border: red solid 1px;
+}
+
+.info-aboutMe .habilidadesDescript{
+  display: block;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--baby-blue);
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+  /* border: 3px solid var(--navy); */
+}
+
+.habilidadesDescript h1 {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 49px;
+}
+
+.habilidadesDescript img {
+  width: 64px;
+  margin-bottom: 44px;
+  margin-right: 24px;
+}
+
+.info-aboutMe .expDescript {
+  width: 100%;
+  height: 60vh;
+  border: 1px solid yellowgreen;
+}
+
+.info-aboutMe .personalDescript {
+  color: orange;
+}
+
+.activeDesc{
+  visibility: visible;
+}
+
+.hiddenDesc{
+  visibility: hidden;
 }
